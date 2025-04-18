@@ -1,11 +1,18 @@
 #include "delay.h"
+
+
+
 int delay(int seconds)
 {
     if (seconds < 0)
     {
         return -1; // Invalid input
     }
+    #ifdef _WIN32
+    Sleep(seconds * 1000); // Convert seconds to milliseconds
+    #else
     usleep(seconds * 1000000); // Convert seconds to microseconds
+    #endif
     return 0;                  // Success
 }
 

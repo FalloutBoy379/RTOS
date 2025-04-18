@@ -1,7 +1,11 @@
 #ifndef DELAY_H
 #define DELAY_H
 
-#include <unistd.h> // For usleep function
+#ifdef _WIN32
+#include <windows.h> // For Sleep function
+#else
+#include <unistd.h>  // For usleep function
+#endif
 #include <time.h>    // For time function
 #include <stdbool.h> // For bool type
 

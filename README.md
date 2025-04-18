@@ -6,6 +6,7 @@ This project is a lightweight task scheduler written in C, inspired by Real-Time
 
 ## 📂 Project Structure
 
+```
 .
 ├── main.c        # Entry point: creates tasks and runs the scheduler loop
 ├── scheduler.c   # Implements task list handling and execution
@@ -13,7 +14,7 @@ This project is a lightweight task scheduler written in C, inspired by Real-Time
 ├── delay.c       # Provides blocking and non-blocking delay mechanisms
 ├── delay.h       # Delay function declarations
 └── README.md     # You're reading it :)
-
+```
 
 ---
 

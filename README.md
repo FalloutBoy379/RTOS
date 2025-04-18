@@ -73,42 +73,44 @@ while (myTaskList.taskCount > 0) {
 ## 🧪 Built-in Test Tasks
 The current version includes:
 
-*FastTask: Completes immediately.
-*DelayedTask: Completes after 3 seconds using non-blocking delay.
-*LowPriorityTask: Lower priority task that also waits 1 second.
+* FastTask: Completes immediately.
+* DelayedTask: Completes after 3 seconds using non-blocking delay.
+* LowPriorityTask: Lower priority task that also waits 1 second.
 These demonstrate task initialization, execution, and clean-up order based on priority.
 
 ## 🧠 Design Philosophy
 This project emphasizes:
 
-Simplicity and readability
-RTOS-style behavior using cooperative multitasking
-Extensibility for embedded platforms or OS abstraction
+- Simplicity and readability
+- RTOS-style behavior using cooperative multitasking
+- Extensibility for embedded platforms or OS abstraction
 💡 Future Enhancements
 Here's how this project can evolve into a more full-featured RTOS:
 
 # Scheduler Features
 
-Time-based execution (run at time $t$)
-Repeating tasks (run every $n$ ms)
-Preemptive multitasking (via interrupts)
-Task yielding and suspension
-Communication & Sync
+- Time-based execution (run at time $t$)
+- Repeating tasks (run every $n$ ms)
+- Preemptive multitasking (via interrupts)
+- Task yielding and suspension
+- Communication & Sync
 
-Semaphores / Mutexes
-Message queues
-Event flags
-Debugging Tools
+- Semaphores / Mutexes
+- Message queues
+- Event flags
+- Debugging Tools
 
-Task state tracking
-Logging with timestamps
-Stack usage monitoring
-Platform Integration
+- Task state tracking
+- Logging with timestamps
+- Stack usage monitoring
+- Platform Integration
 
-Port to STM32, ESP32, or Arduino
-Integration with hardware timers and interrupts
-📚 Dependencies
+- Port to STM32, ESP32, or Arduino
+- Integration with hardware timers and interrupts
+
+# 📚 Dependencies
 Standard C library (stdio.h, stdlib.h, stdbool.h, string.h, unistd.h, time.h)
 Compatible with Unix-like OSes (Linux/macOS)
-🙋‍♂️ Author
+
+## 🙋‍♂️ Author
 Crafted with 💻 and ☕ by Ansh Mehta

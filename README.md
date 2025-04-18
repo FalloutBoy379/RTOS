@@ -73,12 +73,11 @@ while (myTaskList.taskCount > 0) {
 ## 🧪 Built-in Test Tasks
 The current version includes:
 
-```markdown
 *FastTask: Completes immediately.
 *DelayedTask: Completes after 3 seconds using non-blocking delay.
 *LowPriorityTask: Lower priority task that also waits 1 second.
 These demonstrate task initialization, execution, and clean-up order based on priority.
-```
+
 ## 🧠 Design Philosophy
 This project emphasizes:
 

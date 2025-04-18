@@ -68,17 +68,18 @@ while (myTaskList.taskCount > 0) {
     delay(1); // 1-second delay between cycles
 }
 ```
+---
 
-
-🧪 Built-in Test Tasks
+## 🧪 Built-in Test Tasks
 The current version includes:
 
-FastTask: Completes immediately.
-DelayedTask: Completes after 3 seconds using non-blocking delay.
-LowPriorityTask: Lower priority task that also waits 1 second.
+```markdown
+*FastTask: Completes immediately.
+*DelayedTask: Completes after 3 seconds using non-blocking delay.
+*LowPriorityTask: Lower priority task that also waits 1 second.
 These demonstrate task initialization, execution, and clean-up order based on priority.
-
-🧠 Design Philosophy
+```
+## 🧠 Design Philosophy
 This project emphasizes:
 
 Simplicity and readability
@@ -87,7 +88,7 @@ Extensibility for embedded platforms or OS abstraction
 💡 Future Enhancements
 Here's how this project can evolve into a more full-featured RTOS:
 
-Scheduler Features
+# Scheduler Features
 
 Time-based execution (run at time $t$)
 Repeating tasks (run every $n$ ms)
